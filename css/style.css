@@ -4,10 +4,32 @@
   padding: 0;
   box-sizing: border-box;
   border: 1px solid black;
-  min-height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 main {
   background-color: orange;
 
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header */
+header > .row {
+  height: auto;
+}
+
+
+/* Jumbo */
+#jumbo {
+  background-image: url("../img/helbiz-city.jpg");
+  background-position: left center;
+  background-size: 120%;
+  height: 550px;
 }
