@@ -8,12 +8,6 @@
 
 a {
   text-decoration: none;
-  color: black;
-}
-
-main {
-  background-color: orange;
-
 }
 
 img {
@@ -32,4 +26,18 @@ header > .row {
   background-position: left center;
   background-size: 120%;
   height: 550px;
+}
+
+/* Bikes */
+#bikes .row .col-lg-6 {
+  min-height: 150px;
+  background-color: lightgrey;
+}
+
+/* Gentleman */
+#gentleman {
+  background-image: url("../img/anziano.jpg");
+  height: 400px;
+  background-position: center;
+  background-size: 110%;
 }
