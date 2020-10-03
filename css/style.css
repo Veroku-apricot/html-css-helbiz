@@ -15,6 +15,10 @@
     font-weight: normal;
   }
 
+  p {
+    padding: 20px 0;
+  }
+
   a {
     text-decoration: none;
   }
@@ -61,6 +65,10 @@
     margin: 15px 0;
   }
 
+  #jumbo img:last-child {
+    padding: 0 3px;
+  }
+
 /* Bikes */
 #bikes > .row {
   margin-bottom: 30px;
@@ -81,15 +89,10 @@
 
   #bikes p {
     font-size: 20px;
-    padding: 20px 0;
   }
 
   #bikes .row > div:first-child {
-    margin-right: 15px;
-  }
-
-  #bikes .row > div:last-child {
-    margin-left: 15px;
+    margin-right: 30px;
   }
 
 /* Gentleman */
@@ -105,23 +108,31 @@
   }
 
 /* Boxes */
-#boxes .row [class*="col-"] {
-  height: 400px;
+#boxes {
+  color: white;
+  text-align: center;
 }
+
+  #boxes .row [class*="col-"] {
+    min-height: 400px;
+  }
 
   #boxes > .row:last-child {
     margin-top: 30px;
   }
 
   #park {
-    height: auto;
     background-image: url("../img/park.jpg");
-    color: white;
+    background-position: center right;
   }
 
     #park > div {
       position: relative;
     }
+
+      #boxes a {
+        color: white;
+      }
 
   #phone {
     background-image: url("../img/phone.png");
@@ -131,14 +142,17 @@
   #city {
     background-image: url("../img/building.jpg");
     background-position: center top;
+    padding-top: 30px;
   }
 
+    #city h2 {
+      font-weight: 500;
+    }
 
 /* HelbizFamily */
 #family {
   background-image: url("../img/pachwork.jpg");
   height: 400px;
-  background-size: contain;
 }
 
 /* Footer */
