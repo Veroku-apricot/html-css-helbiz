@@ -30,22 +30,36 @@ header > .row {
 }
 
 /* Bikes */
-#bikes .row .col-lg-6 {
+#bikes .row div {
   min-height: 150px;
   background-color: lightgrey;
+  text-align: center;
+  margin-top: 30px;
+
 }
 
 /* Gentleman */
-#gentleman {
+#gentleman > div:first-child {
   background-image: url("../img/anziano.jpg");
+  width: 100%;
   height: 400px;
   background-position: center;
   background-size: 110%;
 }
 
+#gentleman > .row {
+  height: 400px;
+}
+
 /* Boxes */
 #boxes .row [class*="col-"] {
   height: 400px;
+}
+
+#park {
+  background-image: url("../img/park.jpg");
+  background-size: 100%;
+
 }
 
 #phone {
@@ -73,5 +87,19 @@ header > .row {
 }
 
 #footer .row .col-lg-3 nav a {
+  color: grey;
+  display: block;
+}
+
+#footer .row .col-lg-3 a {
   color: white;
+}
+
+#footer > .row {
+  padding: 30px 0;
+}
+
+#footer > .row.center {
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
 }
