@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   border: 1px solid black;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -16,8 +17,22 @@ img {
 }
 
 /* Header */
-header > .row {
-  height: auto;
+#header {
+  position: relative;
+  height: 70px;
+}
+
+#header > .row {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+
+#header a {
+  color: black;
+
+
 }
 
 
@@ -32,10 +47,14 @@ header > .row {
 /* Bikes */
 #bikes .row div {
   min-height: 150px;
-  background-color: lightgrey;
+  background-color: whitesmoke;
   text-align: center;
   margin-top: 30px;
+  padding: 30px;
+}
 
+#bikes p {
+  padding: 20px 0;
 }
 
 /* Gentleman */
@@ -91,7 +110,7 @@ header > .row {
   display: block;
 }
 
-#footer .row .col-lg-3 a {
+#footer a {
   color: white;
 }
 
