@@ -56,6 +56,7 @@
 #jumbo {
   background-image: url("../img/helbiz-city.jpg");
   background-position: left center;
+  background-color: rgba(0,0,0,0.5);
   height: 550px;
   color: white;
   position: relative;
@@ -113,13 +114,21 @@
   text-align: center;
 }
 
-  #boxes .row [class*="col-"] {
-    min-height: 400px;
-  }
+    #boxes .row [class*="col-"] {
+      min-height: 400px;
+    }
 
-  #boxes > .row:last-child {
-    margin-top: 30px;
-  }
+    #boxes > .row:last-child {
+      margin-top: 30px;
+    }
+
+    #boxes a {
+      color: white;
+    }
+
+    #boxes h2 {
+      font-weight: 500;
+    }
 
   #park {
     background-image: url("../img/park.jpg");
@@ -130,14 +139,22 @@
       position: relative;
     }
 
-      #boxes a {
-        color: white;
-      }
-
   #phone {
-    background-image: url("../img/phone.png");
-
+    padding-top: 30px;
+    background: rgb(38,49,58);
+    background: linear-gradient(0deg, rgba(38,49,58,1) 0%, rgba(64,82,99,1) 75%);
+    position: relative;
   }
+
+    .phonebkgr {
+      width: 80%;
+      height: 250px;
+      background-image: url("../img/phone.png");
+      background-position: top;
+      position: absolute;
+      bottom: 0;
+      margin-left: 10%;
+    }
 
   #city {
     background-image: url("../img/building.jpg");
@@ -145,21 +162,50 @@
     padding-top: 30px;
   }
 
-    #city h2 {
-      font-weight: 500;
-    }
-
 /* HelbizFamily */
 #family {
   background-image: url("../img/pachwork.jpg");
   height: 400px;
+  margin: 30px 0;
+  position: relative;
 }
+
+  #family > div {
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 50px 100px;
+  }
+
+  #family h2 {
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  #family a {
+    color: black;
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  #family .fa-youtube {
+    margin-right: 20px;
+  }
 
 /* Footer */
 #footer {
   background-color: black;
   color: white;
+
 }
+
+  #footer * {
+    border: 1px solid white;
+  }
 
   #footer .row .col-lg-3 nav a {
     color: grey;
