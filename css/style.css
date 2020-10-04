@@ -151,6 +151,8 @@
     background: rgb(38,49,58);
     background: linear-gradient(0deg, rgba(38,49,58,1) 0%, rgba(64,82,99,1) 75%);
     position: relative;
+    margin-bottom: 30px;
+    border-right: 15px solid white;
   }
 
     .phonebkgr {
@@ -167,13 +169,21 @@
     background-image: url("../img/building.jpg");
     background-position: center top;
     padding-top: 30px;
+    margin-bottom: 30px;
+    border-left: 15px solid white;
+  }
+
+  @media all and (max-width: 768px) {
+    #phone,#city {
+      border: none;
+    }
   }
 
 /* HelbizFamily */
 #family {
   background-image: url("../img/pachwork.jpg");
   height: 400px;
-  margin: 30px 0;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -207,6 +217,7 @@
 #footer {
   background-color: black;
   color: white;
+  padding: 50px;
 }
 
   #footer .row .col-lg-3 nav a {
