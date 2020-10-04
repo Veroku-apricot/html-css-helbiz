@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-repeat: no-repeat;
   background-size: cover;
   font-family: sans-serif;
@@ -38,29 +38,36 @@
 
 /* Header */
 #header {
-  position: relative;
   height: 70px;
 }
 
   #header > .row {
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
+    line-height: 70px;
+  }
+
+  #header .row div {
+    padding-top: 10px;
   }
 
   #header a {
     color: black;
+    margin-left: 20px;
   }
 
 /* Jumbo */
 #jumbo {
   background-image: url("../img/helbiz-city.jpg");
   background-position: left center;
-  background-color: rgba(0,0,0,0.5);
   height: 550px;
   color: white;
   position: relative;
 }
+
+  #jumbo .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+  }
 
   #jumbo p {
     margin: 15px 0;
@@ -189,7 +196,7 @@
   #family a {
     color: black;
     font-size: 25px;
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   #family .fa-youtube {
@@ -200,20 +207,11 @@
 #footer {
   background-color: black;
   color: white;
-
 }
-
-  #footer * {
-    border: 1px solid white;
-  }
 
   #footer .row .col-lg-3 nav a {
     color: grey;
     display: block;
-  }
-
-  #footer a {
-    color: white;
   }
 
   #footer > .row {
@@ -223,4 +221,46 @@
   #footer > .row.center {
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
+  }
+
+    @media all and (max-width: 768px) {
+      #footer {
+        text-align: center;
+      }
+
+      #footer div {
+        margin-top: 15px;
+      }
+    }
+
+    #footer [class*="fa-"] {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+  #footer a {
+    color: white;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  #footer p {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  #footer img {
+    margin-bottom: 20px;
+  }
+
+
+  /* Bottom app icons */
+  .row.app > img {
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+
+  .row.app img:last-child {
+    padding: 0 3px;
+    margin-left: 5px;
   }
