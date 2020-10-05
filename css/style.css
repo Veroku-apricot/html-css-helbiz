@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: sans-serif;
@@ -45,13 +45,35 @@
     line-height: 70px;
   }
 
-  #header .row div {
+  #header .row div:first-child {
     padding-top: 10px;
+  }
+
+  nav {
+    position: relative;
   }
 
   #header a {
     color: black;
-    margin-left: 20px;
+    margin-left: 15px;
+  }
+
+  #header nav > a:last-child {
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+  }
+
+  @media all and (max-width: 992px) {
+    #header a {
+      display: none;
+    }
+
+    #header nav a:last-child {
+      display: block;
+    }
   }
 
 /* Jumbo */
@@ -104,16 +126,37 @@
   }
 
 /* Gentleman */
-#gentleman > div:first-child {
+#gentleman {
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-image: url("../img/anziano.jpg");
-  background-position: center left;
+  background-position: top left;
+  background-size: contain;
 }
 
-  #gentleman > .row {
-    height: 400px;
+  #gentleman .row {
+    padding: 100px 0;
   }
+
+  #gentleman img {
+    height: 470px;
+  }
+
+    #gentleman h2 {
+      font-size: 30px;
+      font-weight: normal;
+      margin-top: 330px;
+      padding: 0 30px;
+    }
+
+    #gentleman .row > div:last-child {
+      margin-top: 330px;
+    }
+
+
+    #gentleman p {
+      font-size: 14px;
+    }
 
 /* Boxes */
 #boxes {
